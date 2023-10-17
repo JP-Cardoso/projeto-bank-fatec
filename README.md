@@ -1,4 +1,4 @@
-# new_banck
+# new_bank
 
 A new Flutter project.
 
