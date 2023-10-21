@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:new_banck/view/pages/contatos/contatos.dart';
+import 'package:new_banck/view/pages/transferencia/transferencia.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,7 +23,9 @@ class _HomePageState extends State<HomePage> {
               title: const Text('Transação'),
               onTap: () {
                 // Redireciona para a tela de transação
-                Navigator.pushNamed(context, '/transacao');
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ListaTransferencia())  
+                );
               },
             ),
           ),
@@ -30,7 +34,9 @@ class _HomePageState extends State<HomePage> {
               title: const Text('Contatos'),
               onTap: () {
                 // Redireciona para a tela de contatos
-                Navigator.pushNamed(context, '/contatos');
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ListaContato())  
+                );
               },
             ),
           ),
