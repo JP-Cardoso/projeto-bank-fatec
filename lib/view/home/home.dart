@@ -36,7 +36,9 @@ class _HomePageState extends State<HomePage> {
                 // Redireciona para a tela de contatos
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => ListaContato())  
+                
                 );
+                
               },
             ),
           ),
